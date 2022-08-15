@@ -12,6 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-color: orange rgba(55, 55, 55, 1);
 }
 
 body {

@@ -2,10 +2,19 @@ div {
 	color: rgba(255, 255, 255, 1);
 }
 
+a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+}
+
 .App {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	margin-top: 2rem;
 	background-color: rgba(55, 55, 55, 1);
-	width: 500px;
+	max-width: 500px;
+	min-width: 410px;
 	height: 600px;
 	border: none;
 	border-radius: 10px;
@@ -35,7 +44,6 @@ div {
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem;
-	z-index: 5;
 }
 
 .sub-header h2 {
@@ -54,7 +62,6 @@ div {
 	overflow-y: scroll;
 	height: 370px;
 	scroll-behavior: smooth;
-	scrollbar-color: orange rgba(55, 55, 55, 1);
 }
 
 .note-item {
@@ -62,6 +69,10 @@ div {
 	padding: 0.75rem 1rem;
 	margin: 0.25rem 1rem;
 	border-radius: 10px;
+}
+
+.note-item:hover {
+	background-color: rgba(47, 47, 47, 1);
 }
 
 .note-item > .note-heading {
@@ -98,4 +109,70 @@ div {
 .add-button > h2 {
 	font-size: 3rem;
 	font-weight: lighter;
+}
+
+/*Note page*/
+.note-page {
+	height: 89%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.note-page-header {
+	padding: 1rem;
+}
+
+.note-page-header a {
+	color: orange;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.note-page-body {
+	padding: 1rem;
+	height: 90%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	/*background-color: orange;*/
+}
+
+.note-page-body h3 {
+	margin: 3px 10px 6px 10px;
+	font-size: 14px;
+	font-weight: lighter;
+	color: rgba(150, 150, 150, 1);
+}
+
+.note-page-body textarea {
+	resize: none;
+	height: 75%;
+	width: 100%;
+	font-size: 16px;
+	background-color: rgba(40, 40, 40, 1);
+	color: rgba(255, 255, 255, 1);
+	outline: none;
+	border: none;
+	border-radius: 7px;
+	padding: 1rem;
+}
+
+.note-page-body input {
+	margin-bottom: 1rem;
+	padding: 0.5rem 1rem;
+	resize: none;
+	width: 100%;
+	font-size: 18px;
+	background-color: rgba(40, 40, 40, 1);
+	color: rgba(255, 255, 255, 1);
+	outline: none;
+	border: none;
+	border-radius: 7px;
+}
+
+.note-page-body textarea:active,
+.note-page-body textarea:focus,
+.note-page-body input:active,
+.note-page-body input:focus {
+	outline: none;
+	border: none;
 }

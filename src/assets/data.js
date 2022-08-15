@@ -1,23 +1,22 @@
 let notes = [
     {
-        "id": 1,
-        "body": "Todays Agenda\n\n- Walk Dog\n- Feed fish\n- Play basketball\n- Eat a salad",
-        "updated": "2021-07-14T13:49:02.078653Z",
-        "created": "2021-07-13T21:54:16.235392Z"
+        id: 1,
+        title: "Today's Agenda",
+        body: "Walk Dog\n- Feed fish\n- Play basketball\n- Eat a salad",
+        date: "Mon Aug 15 2022 22:39:26 GMT+0530 (India Standard Time)",
     },
     {
-        "id": 2,
-        "body": "Bob from bar down the \n\n- Take out trash\n- Eat food",
-        "updated": "2021-07-13T20:43:18.550058Z",
-        "created": "2021-07-13T00:17:13.289897Z"
+        id: 2,
+        title: "Meet Bob",
+        body: "Bob from bar down the \n\n- Take out trash\n- Eat food",
+        date: "Mon Aug 15 2022 22:39:26 GMT+0530 (India Standard Time)",
     },
     {
-        "id": 3,
-        "body": "Wash car",
-        "updated": "2021-07-13T19:46:12.187306Z",
-        "created": "2021-07-13T00:16:22.399841Z"
-    }
-]
-
+        id: 3,
+        title: "Wash Car",
+        body: "Wash car with Shampoo and then sprinkle water over it for few minutes and then at last let it dry",
+        date: "Mon Aug 15 2022 22:39:26 GMT+0530 (India Standard Time)",
+    },
+];
 
 export default notes;
