@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import NotesList from "./routes/NotesList";
+import AddNote from "./routes/AddNote";
 import Note from "./routes/Note";
 import { Routes, Route, Link } from "react-router-dom";
 import notes from "./assets/data";
@@ -23,6 +24,7 @@ function App() {
           path="*"
           element={<h2 style={notFoundStyles}>Page not Found</h2>}
         />
+        <Route path="/note/addnote" element={<AddNote />} />
       </Routes>
     </div>
   );

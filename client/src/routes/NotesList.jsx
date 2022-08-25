@@ -1,5 +1,4 @@
 import NoteItem from "../components/NoteItem";
-import AddNote from "../components/AddNote";
 import { Link } from "react-router-dom";
 
 const NotesList = ({ notes }) => {
@@ -19,7 +18,11 @@ const NotesList = ({ notes }) => {
 					);
 				})}
 			</div>
-			<AddNote />
+			<Link to="/note/addnote">
+				<div className="add-button">
+					<h2>+</h2>
+				</div>
+			</Link>
 		</div>
 	);
 };
