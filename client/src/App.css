@@ -46,7 +46,15 @@ a {
 	padding: 1rem;
 }
 
+.sub-header .sub-header-heading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .sub-header h2 {
+	margin-top: 0.3rem;
+	margin-left: 0.25rem;
 	font-weight: normal;
 	color: orange;
 }

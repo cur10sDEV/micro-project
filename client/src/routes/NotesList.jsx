@@ -22,7 +22,15 @@ const NotesList = () => {
 	return (
 		<div className="notes-list">
 			<div className="sub-header">
-				<h2>Notes</h2>
+				<div className="sub-header-heading">
+					<img
+						className="icons"
+						src="https://s2.svgbox.net/materialui.svg?ic=list&color=000"
+						width="32"
+						height="32"
+					/>
+					<h2>Notes</h2>
+				</div>
 				<h3>{notes.length}</h3>
 			</div>
 			<div className="notes-container">
