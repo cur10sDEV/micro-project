@@ -51,7 +51,6 @@ def getNotes(request):
     elif request.method == 'POST':
         data = request.data
         note = Note.objects.create(body=data['body'])
-
         serializer = NoteSerializer(note, many=False)
         return Response(serializer.data)
 
