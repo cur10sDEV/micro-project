@@ -4,8 +4,8 @@ from django.db import models
 
 
 class Note(models.Model):
-    title = models.TextField(blank=False)
-    body = models.TextField(blank=False)
+    title = models.TextField(null=True, blank=False)
+    body = models.TextField(null=True, blank=False)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
